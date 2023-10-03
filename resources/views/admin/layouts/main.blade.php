@@ -76,25 +76,6 @@
 
         <!-- Sidebar -->
         <div class="sidebar">
-            <?php /*<!-- Sidebar user panel (optional) -->
-            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                <div class="info">
-                    <a href="#" class="d-block">{{ Auth::user()->name }}</a>
-                </div>
-            </div>
-
-            <!-- SidebarSearch Form -->
-            <div class="form-inline">
-                <div class="input-group" data-widget="sidebar-search">
-                    <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-                    <div class="input-group-append">
-                        <button class="btn btn-sidebar">
-                            <i class="fas fa-search fa-fw"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>*/?>
-
             <!-- Sidebar Menu -->
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -126,7 +107,6 @@
     @yield('content')
 
     <footer class="main-footer">
-        <!--<strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io" target="_blank">AdminLTE.io</a>.</strong>-->
         <a href="https://adminlte.io/themes/v3/" target="_blank">Live Preview</a>
         <div class="float-right d-none d-sm-inline-block">
             <b>v:</b> 0.1.1
@@ -146,9 +126,6 @@
 <!-- jQuery UI 1.11.4 -->
 <script src="{{ asset('plugins/jquery-ui/jquery-ui.min.js') }}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-    $.widget.bridge('uibutton', $.ui.button)
-</script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('plugins/select2/js/select2.full.min.js') }}"></script>
 <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -166,6 +143,7 @@
 <script src="{{ asset('dist/js/adminlte.js') }}"></script>
 <script type="text/javascript">
     $(document).ready(function() {
+        $.widget.bridge('uibutton', $.ui.button);
         bsCustomFileInput.init();
         $('.select2').select2();
     })
