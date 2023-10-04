@@ -81,25 +81,25 @@
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <li class="nav-item">
-                        <a href="{{ route('admin.user.index') }}" class="nav-link">
+                        <a href="{{ route('admin.user.index') }}" class="nav-link {{ (request()->is('admin/users*')) ? 'active' : '' }}">
                             <i class="nav-icon fas fa-user"></i>
                             <p>Пользователи</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('admin.post.index') }}" class="nav-link">
+                        <a href="{{ route('admin.post.index') }}" class="nav-link {{ (request()->is('admin/posts*')) ? 'active' : '' }}">
                             <i class="nav-icon fas fa-clipboard"></i>
                             <p>Посты</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('admin.categories.index') }}" class="nav-link">
+                        <a href="{{ route('admin.categories.index') }}" class="nav-link {{ (request()->is('admin/categories*')) ? 'active' : '' }}">
                             <i class="nav-icon fas fa-list"></i>
                             <p>Категории</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('admin.tag.index') }}" class="nav-link">
+                        <a href="{{ route('admin.tag.index') }}" class="nav-link {{ (request()->is('admin/tags*')) ? 'active' : '' }}">
                             <i class="nav-icon fas fa-tag"></i>
                             <p>Тэги</p>
                         </a>

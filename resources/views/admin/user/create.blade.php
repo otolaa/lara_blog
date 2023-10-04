@@ -45,6 +45,23 @@
                                     <div class="text-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPass">Password</label>
+                                    <input type="password" name="password" class="form-control" id="exampleInputPass" placeholder="Password">
+                                    @error('password')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <label>Role</label>
+                                    <select name="role" class="form-control">
+                                        @foreach($roles as $k=>$role)
+                                            <option value="{{ $k }}"
+                                                {{ $k == old('role') ? ' selected':'' }}
+                                            >{{ $role }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <input type="submit" class="btn btn-primary" value="Добавить">
