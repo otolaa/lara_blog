@@ -15,7 +15,7 @@ class User extends Authenticatable
     const ROLE_ADMIN = 1;
     const ROLE_USER = 0;
 
-    public static function getPole()
+    public static function getRole()
     {
         return [
             self::ROLE_USER => 'User',
