@@ -114,3 +114,11 @@ php artisan make:controller Main/IndexController
 chown -R otolaa:otolaa database/migrations
 chown -R otolaa:otolaa app/Http/Requests
 ```
+
+### 
+```
+php artisan make:middleware AdminMiddleware
+
+php artisan migrate:rollback
+php artisan migrate
+```

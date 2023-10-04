@@ -65,8 +65,8 @@
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
+                    {{ $posts->links()  }}
                 </div>
                 <!-- ./col -->
             </div>
