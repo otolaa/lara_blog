@@ -48,6 +48,66 @@
                                     <div class="text-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
+                                <div class="form-group">
+                                    <label for="exampleInputFile0">Добавление превью</label>
+                                    @if($post->preview_image)
+                                    <div class="w-25 mb-2">
+                                        <img src="{{ url('storage/'.$post->preview_image)  }}" class="img-fluid">
+                                    </div>
+                                    @endif
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" name="preview_image" class="custom-file-input" id="exampleInputFile0">
+                                            <label class="custom-file-label" for="exampleInputFile">Выберите файл</label>
+                                        </div>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">Загрузите</span>
+                                        </div>
+                                    </div>
+                                    @error('preview_image')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputFile1">Добавление изображения</label>
+                                    @if($post->main_image)
+                                        <div class="w-25 mb-2">
+                                            <img src="{{ url('storage/'.$post->main_image)  }}" class="img-fluid">
+                                        </div>
+                                    @endif
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" name="main_image" class="custom-file-input" id="exampleInputFile1">
+                                            <label class="custom-file-label" for="exampleInputFile">Выберите файл</label>
+                                        </div>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">Загрузите</span>
+                                        </div>
+                                    </div>
+                                    @error('main_image')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <label>Выберите категорию</label>
+                                    <select name="category_id" class="form-control">
+                                        @foreach($categories as $category)
+                                            <option value="{{ $category->id }}"
+                                                {{ $category->id == $post->category_id ? ' selected':'' }}
+                                            >{{ $category->title }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Тэги</label>
+                                    <select class="select2" name="tag_ids[]" multiple="multiple" data-placeholder="Тэги" style="width: 100%;">
+                                        @foreach($tags as $tag)
+                                            <option value="{{ $tag->id }}"
+                                                {{ is_array($post->tags->pluck('id')->toArray()) && in_array($tag->id, $post->tags->pluck('id')->toArray()) ? ' selected':'' }}
+                                            >{{ $tag->title }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <input type="submit" class="btn btn-primary" value="Изменить">
