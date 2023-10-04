@@ -2,7 +2,7 @@
 https://www.youtube.com/playlist?list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB
 
 ```
-curl -s https://laravel.build/laravel_0 | bash
+curl -s https://laravel.build/laravel_example_app | bash
 ```
 
 ### 2 - // edit -> .env
@@ -10,6 +10,13 @@ curl -s https://laravel.build/laravel_0 | bash
 cd laravel_0
 WWWGROUP=1000
 WWWUSER=1000
+```
+
+### 2.5
+```
+php artisan key:generate
+php artisan storage:link
+php artisan migrate:fresh
 ```
 
 ### 3
