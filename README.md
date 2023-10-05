@@ -122,3 +122,19 @@ php artisan make:middleware AdminMiddleware
 php artisan migrate:rollback
 php artisan migrate
 ```
+
+### 13 - почтовые шаблоны
+```
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.yandex.ru
+MAIL_PORT=465
+MAIL_USERNAME=login_yandex
+MAIL_PASSWORD=password_user
+MAIL_ENCRYPTION=ssl
+MAIL_FROM_ADDRESS="login_yandex@yandex.ru"
+MAIL_FROM_NAME="${APP_NAME}"
+```
+
+```
+php artisan make:mail User/PasswordMail -m mail.user.password
+```
