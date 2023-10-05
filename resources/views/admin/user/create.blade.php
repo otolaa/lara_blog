@@ -33,14 +33,18 @@
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="exampleInputTitle1">Name</label>
-                                    <input type="text" name="name" class="form-control" id="exampleInputTitle1" placeholder="Name">
+                                    <input type="text" name="name" class="form-control" id="exampleInputTitle1"
+                                           value="{{ old('name') }}"
+                                           placeholder="Name">
                                     @error('name')
                                         <div class="text-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email</label>
-                                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                           value="{{ old('email') }}"
+                                           placeholder="Email">
                                     @error('email')
                                     <div class="text-danger">{{ $message }}</div>
                                     @enderror

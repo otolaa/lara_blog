@@ -5,3 +5,5 @@
 *.css linguist-detectable=false
 *.json linguist-detectable=false
 *.scss linguist-detectable=false
+*.blade linguist-detectable=false
+*.blade.php linguist-detectable=false
