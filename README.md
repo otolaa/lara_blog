@@ -1,6 +1,5 @@
-### 1 - Источник (Шаг 2. Laravel курс. Блог)
-https://www.youtube.com/playlist?list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB
-
+### 1 - Laravel Блог
+Посты, Категории, Тэги
 ```
 curl -s https://laravel.build/laravel_example_app | bash
 ```
