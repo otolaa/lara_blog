@@ -32,7 +32,7 @@
                 </li>
             </ul>
 
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+            <!--<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
                 <span>Saved reports</span>
                 <a class="link-secondary" href="#" aria-label="Add a new report">
                     <i class="bi bi-plus-circle"></i>
@@ -63,22 +63,26 @@
                         Year-end sale
                     </a>
                 </li>
-            </ul>
+            </ul>-->
 
             <hr class="my-3">
 
             <ul class="nav flex-column mb-auto">
-                <li class="nav-item">
+                <!--<li class="nav-item">
                     <a class="nav-link d-flex align-items-center gap-2" href="#">
                         <i class="bi bi-gear-wide-connected"></i>
                         Settings
                     </a>
-                </li>
+                </li>-->
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <a class="nav-link d-flex align-items-center gap-2" href="{{ route('logout') }}"
+                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <i class="bi bi-door-closed"></i>
-                        Sign out
+                        Выйти
                     </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 </li>
             </ul>
         </div>
