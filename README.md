@@ -1,5 +1,5 @@
 ### 1 - Laravel Блог
-Посты, Категории, Тэги
+Категории, Тэги, Посты
 ```
 curl -s https://laravel.build/laravel_example_app | bash
 ```
@@ -76,12 +76,10 @@ INSERT INTO posts (id, title, content) VALUE (1, 'title', 'content');
 //
 
 ```
-### 9 - создает модель с минграцией и т.д.
+### 9 - создает модель с миграцией и т.д.
 ```
-php artisan make:model Article -m
+php artisan make:model Post -m
 ```
-// youtube.com/watch?v=yUd8mAE6UuM&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=14
-// youtube.com/watch?v=Oe1HT_OAEyg&list=PLtHO7nOKfHGaWhgndBeHQFm6bYZ7ROuVe&index=2
 
 ### 10 
 ```
