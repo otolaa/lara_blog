@@ -1,201 +1,47 @@
 @extends('layouts.main')
 
 @section('content')
-<main class="blog">
     <div class="container">
-        <h1 class="edica-page-title" data-aos="fade-up">Blog</h1>
-        <section class="featured-posts-section">
-            <div class="row">
-                <div class="col-md-4 fetured-post blog-post" data-aos="fade-right">
-                    <div class="blog-post-thumbnail-wrapper">
-                        <img src="assets/images/blog_1.jpg" alt="blog post">
-                    </div>
-                    <p class="blog-post-category">Blog post</p>
-                    <a href="#!" class="blog-post-permalink">
-                        <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                    </a>
-                </div>
-                <div class="col-md-4 fetured-post blog-post" data-aos="fade-up">
-                    <div class="blog-post-thumbnail-wrapper">
-                        <img src="assets/images/blog_2.jpg" alt="blog post">
-                    </div>
-                    <p class="blog-post-category">Blog post</p>
-                    <a href="#" class="blog-post-permalink">
-                        <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                    </a>
-                </div>
-                <div class="col-md-4 fetured-post blog-post" data-aos="fade-left">
-                    <div class="blog-post-thumbnail-wrapper">
-                        <img src="assets/images/blog_3.jpg" alt="blog post">
-                    </div>
-                    <p class="blog-post-category">Blog post</p>
-                    <a href="#" class="blog-post-permalink">
-                        <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                    </a>
-                </div>
-            </div>
-        </section>
         <div class="row">
-            <div class="col-md-8">
-                <section>
-                    <div class="row blog-post-row">
-                        <div class="col-md-6 blog-post" data-aos="fade-up">
-                            <div class="blog-post-thumbnail-wrapper">
-                                <img src="assets/images/blog_4.jpg" alt="blog post">
-                            </div>
-                            <p class="blog-post-category">Blog post</p>
-                            <a href="#!" class="blog-post-permalink">
-                                <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-6 blog-post" data-aos="fade-up">
-                            <div class="blog-post-thumbnail-wrapper">
-                                <img src="assets/images/blog_5.jpg" alt="blog post">
-                            </div>
-                            <p class="blog-post-category">Blog post</p>
-                            <a href="#!" class="blog-post-permalink">
-                                <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                            </a>
-                        </div>
+            <div class="col-sm-6 mb-3 mb-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Documentation</h5>
+                        <p class="card-text">Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.</p>
+                        <a href="https://laravel.com/docs" class="card-link">Card link</a>
                     </div>
-                    <div class="row blog-post-row">
-                        <div class="col-md-6 blog-post" data-aos="fade-up">
-                            <div class="blog-post-thumbnail-wrapper">
-                                <img src="assets/images/blog_6.jpg" alt="blog post">
-                            </div>
-                            <p class="blog-post-category">Blog post</p>
-                            <a href="#!" class="blog-post-permalink">
-                                <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-6 blog-post" data-aos="fade-up">
-                            <div class="blog-post-thumbnail-wrapper">
-                                <img src="assets/images/blog_7.jpg" alt="blog post">
-                            </div>
-                            <p class="blog-post-category">Blog post</p>
-                            <a href="#!" class="blog-post-permalink">
-                                <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row blog-post-row">
-                        <div class="col-md-6 blog-post" data-aos="fade-up">
-                            <div class="blog-post-thumbnail-wrapper">
-                                <img src="assets/images/blog_8.jpg" alt="blog post">
-                            </div>
-                            <p class="blog-post-category">Blog post</p>
-                            <a href="#!" class="blog-post-permalink">
-                                <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-6 blog-post" data-aos="fade-up">
-                            <div class="blog-post-thumbnail-wrapper">
-                                <img src="assets/images/blog_9.jpg" alt="blog post">
-                            </div>
-                            <p class="blog-post-category">Blog post</p>
-                            <a href="#!" class="blog-post-permalink">
-                                <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row blog-post-row">
-                        <div class="col-md-6 blog-post" data-aos="fade-up">
-                            <div class="blog-post-thumbnail-wrapper">
-                                <img src="assets/images/blog_10.jpg" alt="blog post">
-                            </div>
-                            <p class="blog-post-category">Blog post</p>
-                            <a href="#!" class="blog-post-permalink">
-                                <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-6 blog-post" data-aos="fade-up">
-                            <div class="blog-post-thumbnail-wrapper">
-                                <img src="assets/images/blog_11.jpg" alt="blog post">
-                            </div>
-                            <p class="blog-post-category">Blog post</p>
-                            <a href="#!" class="blog-post-permalink">
-                                <h6 class="blog-post-title">Front becomes an official Instagram Marketing Partner</h6>
-                            </a>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
-            <div class="col-md-4 sidebar" data-aos="fade-left">
-                <div class="widget widget-post-carousel">
-                    <h5 class="widget-title">Post Lists</h5>
-                    <div class="post-carousel">
-                        <div id="carouselId" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselId" data-slide-to="1"></li>
-                                <li data-target="#carouselId" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner" role="listbox">
-                                <figure class="carousel-item active">
-                                    <img src="assets/images/blog_widget_carousel.jpg" alt="First slide">
-                                    <figcaption class="post-title">
-                                        <a href="#!">Front becomes an official Instagram Marketing Partner</a>
-                                    </figcaption>
-                                </figure>
-                                <figure class="carousel-item">
-                                    <img src="assets/images/blog_7.jpg" alt="First slide">
-                                    <figcaption class="post-title">
-                                        <a href="#!">Front becomes an official Instagram Marketing Partner</a>
-                                    </figcaption>
-                                </figure>
-                                <div class="carousel-item">
-                                    <img src="assets/images/blog_5.jpg" alt="First slide">
-                                    <figcaption class="post-title">
-                                        <a href="#!">Front becomes an official Instagram Marketing Partner</a>
-                                    </figcaption>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-sm-6 mb-3 mb-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Laracasts</h5>
+                        <p class="card-text">Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.</p>
+                        <a href="https://laracasts.com" class="card-link">Card link</a>
                     </div>
                 </div>
-                <div class="widget widget-post-list">
-                    <h5 class="widget-title">Post List</h5>
-                    <ul class="post-list">
-                        <li class="post">
-                            <a href="#!" class="post-permalink media">
-                                <img src="assets/images/blog_widget_1.jpg" alt="blog post">
-                                <div class="media-body">
-                                    <h6 class="post-title">Front becomes an official Instagram Marketing Partner</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="post">
-                            <a href="#!" class="post-permalink media">
-                                <img src="assets/images/blog_widget_2.jpg" alt="blog post">
-                                <div class="media-body">
-                                    <h6 class="post-title">Front becomes an official Instagram Marketing Partner</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="post">
-                            <a href="#!" class="post-permalink media">
-                                <img src="assets/images/blog_widget_3.jpg" alt="blog post">
-                                <div class="media-body">
-                                    <h6 class="post-title">Front becomes an official Instagram Marketing Partner</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="post">
-                            <a href="#!" class="post-permalink media">
-                                <img src="assets/images/blog_widget_4.jpg" alt="blog post">
-                                <div class="media-body">
-                                    <h6 class="post-title">Front becomes an official Instagram Marketing Partner</h6>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Laravel News</h5>
+                        <p class="card-text">Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.</p>
+                        <a href="https://laravel-news.com" class="card-link">Card link</a>
+                    </div>
                 </div>
-                <div class="widget">
-                    <h5 class="widget-title">Categories</h5>
-                    <img src="assets/images/blog_widget_categories.jpg" alt="categories" class="w-100">
+            </div>
+            <div class="col-sm-6 mb-3 mb-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Vibrant Ecosystem</h5>
+                        <p class="card-text">
+                            Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Forge</a>, <a href="https://vapor.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Vapor</a>, <a href="https://nova.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Nova</a>, and <a href="https://envoyer.io" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Telescope</a>, and more.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</main>
 @endsection
