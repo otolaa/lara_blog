@@ -3,7 +3,7 @@
     <div class="container-fluid pl-0">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 d-flex align-items-center">
+                <h1 class="m-0 ml-2 d-flex align-items-center">
                     @isset($url_back)
                         <a href="{{ $url_back }}" class="btn btn-xs btn-secondary"><i
                                     class="fa fa-chevron-left"></i> Back</a>

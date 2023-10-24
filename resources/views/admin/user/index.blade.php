@@ -8,7 +8,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body table-responsive p-0">
-                        <table class="table table-hover text-nowrap">
+                        <table class="table table-striped table-valign-middle">
                             <thead>
                             <tr>
                                 <th>ID</th>
