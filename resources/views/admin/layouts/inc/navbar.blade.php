@@ -27,20 +27,10 @@
                 <span class="d-none d-md-inline">{{ Lte3::user('name') }}</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                <!-- User image -->
-                <li class="user-header bg-primary">
-                    <img src="/vendor/adminlte/dist/img/user2-160x160.jpg" class="img-circle elevation-2">
-                    <p>
-                        {{ Lte3::user('name') }}
-                        <small>Created {{ Lte3::user('created_at') }}</small>
-                    </p>
-                </li>
-                <!-- Menu Footer-->
-                <li class="user-footer">
-                    <a href="/admin/profile" class="btn btn-default btn-flat">Profile</a>
-                    <a href="/logout" class="btn btn-default btn-flat float-right js-click-submit"
-                       data-confirm="Logout?">Sign out</a>
-                </li>
+                <a href="/admin/users/{{ Lte3::user('id') }}" class="dropdown-item">Profile</a>
+                <div class="dropdown-divider"></div>
+                <a href="/logout" class="dropdown-item js-click-submit"
+                   data-confirm="Logout?">Sign out</a>
             </ul>
         </li>
         @else

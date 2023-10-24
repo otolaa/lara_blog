@@ -30,12 +30,15 @@
                                     <td>{{ $user->created_at }}</td>
                                     <td>{{ $user->updated_at }}</td>
                                     <td>
+                                        <div class="btn-group">
                                         <a class="btn btn-primary btn-sm" href="{{ route('admin.user.show', $user->id)  }}"><i class="far fa-eye"></i></a>
                                         <a class="btn btn-success btn-sm" href="{{ route('admin.user.edit', $user->id)  }}"><i class="fas fa-pencil-alt"></i></a>
-                                        <form action="{{ route('admin.user.delete', $user->id)  }}" method="POST" class="d-inline-block">
+                                        <a class="btn btn-danger btn-sm" href="{{ route('admin.user.edit', $user->id)  }}"
+                                           onclick="event.preventDefault(); document.getElementById('delete-{{ $user->id }}').submit();"><i class="fas fa-trash"></i></a>
+                                        </div>
+                                        <form action="{{ route('admin.user.delete', $user->id)  }}" id="delete-{{ $user->id }}" method="POST" class="d-none">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
                                         </form>
                                     </td>
                                 </tr>
