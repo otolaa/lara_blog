@@ -1,12 +1,11 @@
-### 1 - Laravel Блог
-Категории, Тэги, Посты
+### 1 - Laravel Blog
+Category, Tag, Post
 ```
 curl -s https://laravel.build/laravel_example_app | bash
 ```
 
 ### 2 - // edit -> .env
 ```
-cd laravel_0
 WWWGROUP=1000
 WWWUSER=1000
 ```
@@ -18,7 +17,7 @@ php artisan storage:link
 php artisan migrate:fresh
 ```
 
-### 3
+### 3 help docker
 ```
 docker-compose up -d # запуск сервера
 docker-compose up -d --build  # запуск с обновлением и т.д.
@@ -32,7 +31,7 @@ docker update --restart=no $(docker ps -a -q)  // Используйте при�
 
 ### 4
 ```
-docker exec -it ed2e5478c11c bash
+docker exec -it DOCKER_ID bash
 php artisan --version
 php artisan --help
 php artisan serv
@@ -56,7 +55,7 @@ php artisan migrate
 
 ### 6
 ```
-docker exec -it 7104e6ba6318 bash
+docker exec -it DOCKER_ID bash
 mysql -u sail -p laravel_0
 SHOW TABLES FROM laravel_0;
 SHOW COLUMNS FROM posts;
@@ -134,4 +133,12 @@ MAIL_FROM_NAME="${APP_NAME}"
 
 ```
 php artisan make:mail User/PasswordMail -m mail.user.password
+```
+
+### 14 add adminLte https://github.com/fomvasss/laravel-lte3  
+```
+composer require fomvasss/laravel-lte3
+composer require almasaeed2010/adminlte --dev
+php artisan vendor:publish --tag=lte3-config
+php artisan lte3:install
 ```

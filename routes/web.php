@@ -16,6 +16,7 @@ use App\Http\Controllers\Main\IndexController;
 
 Route::controller(IndexController::class)->group(function () {
     Route::get('/', IndexController::class)->name('main.index');
+    Route::get('/lte3', 'App\Http\Controllers\Main\IndexController@lte3')->name('lte3.index');
 });
 
 Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix'=>'admin', 'middleware'=>['auth', 'admin']], function () {

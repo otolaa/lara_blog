@@ -1,8 +1,4 @@
-@extends('admin.layouts.main')
-
-@section('meta')
-    <title>Админ - Категории</title>
-@endsection
+@extends('admin.layouts.app')
 
 @section('content')
     <div class="row mb-2">

@@ -11,4 +11,9 @@ class IndexController extends Controller
     {
         return view('main.index');
     }
+
+    public function lte3()
+    {
+        abort(404);
+    }
 }

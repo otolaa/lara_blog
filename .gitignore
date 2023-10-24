@@ -1,11 +1,13 @@
 /.phpunit.cache
 /node_modules
+/public/vendor
 /public/build
 /public/hot
 /public/storage
 /storage/*.key
 /storage/app/images
 /storage/framework/cache
+/resources/views/admin_example/
 /vendor
 .env
 .env.backup

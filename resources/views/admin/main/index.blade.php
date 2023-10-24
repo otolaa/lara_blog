@@ -1,11 +1,16 @@
-@extends('admin.layouts.main')
-
-@section('meta')
-    <title>Админ - главная</title>
-@endsection
+@extends('admin.layouts.app')
 
 @section('content')
-<!-- Content Wrapper. Contains page content -->
-<h3 class="">Главная</h3>
-<!-- /.content-wrapper -->
+    @include('admin.parts.content-header', ['page_title' => 'Главная'])
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
 @endsection

@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0ce5353653ac4aa921859375d213f73",
+    "content-hash": "d5379648597897fc04c63275c751eb65",
     "packages": [
+        {
+            "name": "almasaeed2010/adminlte",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ColorlibHQ/AdminLTE.git",
+                "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/bd4d9c72931f1dd28601b6bfb387554a381ad540",
+                "reference": "bd4d9c72931f1dd28601b6bfb387554a381ad540",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colorlib"
+                }
+            ],
+            "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 4",
+            "homepage": "https://adminlte.io/",
+            "keywords": [
+                "JS",
+                "admin",
+                "back-end",
+                "css",
+                "less",
+                "responsive",
+                "template",
+                "theme",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/ColorlibHQ/AdminLTE/issues",
+                "source": "https://github.com/ColorlibHQ/AdminLTE/tree/v3.2.0"
+            },
+            "time": "2022-02-07T20:33:09+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -431,6 +474,79 @@
                 }
             ],
             "time": "2023-01-14T14:17:03+00:00"
+        },
+        {
+            "name": "fomvasss/laravel-lte3",
+            "version": "1.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fomvasss/laravel-lte3.git",
+                "reference": "3c98f57cbe51c5652c56c1275d79303a86f7a71d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fomvasss/laravel-lte3/zipball/3c98f57cbe51c5652c56c1275d79303a86f7a71d",
+                "reference": "3c98f57cbe51c5652c56c1275d79303a86f7a71d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^9.0|^10.0",
+                "php": "^8.0.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Fomvasss\\Lte3\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Lte3": "Fomvasss\\Lte3\\Facades\\Lte"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Fomvasss\\Lte3\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vasyl Fomin",
+                    "email": "fomvasss@gmail.com",
+                    "homepage": "https://github.com/fomvasss",
+                    "role": "Architect & Developer"
+                },
+                {
+                    "name": "Klimovych Juriy",
+                    "email": "web-west@i.ua",
+                    "role": "Developer"
+                }
+            ],
+            "description": "LTE3 Control Panel for Laravel Framework",
+            "keywords": [
+                "admin",
+                "components",
+                "control",
+                "dashboard",
+                "fields",
+                "fomvasss",
+                "form-builder",
+                "html-form",
+                "lte",
+                "panel"
+            ],
+            "support": {
+                "issues": "https://github.com/fomvasss/laravel-lte3/issues",
+                "source": "https://github.com/fomvasss/laravel-lte3/tree/1.16.0"
+            },
+            "time": "2023-10-23T09:42:42+00:00"
         },
         {
             "name": "fruitcake/php-cors",
