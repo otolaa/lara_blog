@@ -30,12 +30,15 @@
                             <td>{{ $tag->created_at }}</td>
                             <td>{{ $tag->updated_at }}</td>
                             <td>
-                                <a class="btn btn-primary btn-sm" href="{{ route('admin.tag.show', $tag->id)  }}"><i class="far fa-eye"></i></a>
-                                <a class="btn btn-success btn-sm" href="{{ route('admin.tag.edit', $tag->id)  }}"><i class="fas fa-pencil-alt"></i></a>
-                                <form action="{{ route('admin.tag.delete', $tag->id)  }}" method="POST" class="d-inline-block">
+                                <div class="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="{{ route('admin.tag.show', $tag->id)  }}"><i class="far fa-eye"></i></a>
+                                    <a class="btn btn-success btn-sm" href="{{ route('admin.tag.edit', $tag->id)  }}"><i class="fas fa-pencil-alt"></i></a>
+                                    <a class="btn btn-danger btn-sm" href="{{ route('admin.tag.edit', $tag->id)  }}"
+                                       onclick="event.preventDefault(); document.getElementById('delete-{{ $tag->id }}').submit();"><i class="fas fa-trash"></i></a>
+                                </div>
+                                <form action="{{ route('admin.tag.delete', $tag->id)  }}" id="delete-{{ $tag->id }}" method="POST" class="d-none">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
                                 </form>
                             </td>
                         </tr>

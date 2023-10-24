@@ -1,9 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('content')
-
     @include('admin.parts.content-header', ['page_title' => $user->name])
-
 <section class="content">
     <div class="container-fluid">
         <div class="row">

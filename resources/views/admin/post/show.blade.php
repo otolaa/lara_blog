@@ -2,29 +2,7 @@
 
 @section('content')
 
-<!-- Content Header (Page header) -->
-<div class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6 d-flex align-items-center">
-                <h1 class="m-0 mr-2">{{ $post->title  }}</h1>
-                <a class="btn btn-success btn-sm mr-1" href="{{ route('admin.post.edit', $post->id)  }}"><i class="fas fa-pencil-alt"></i></a>
-                <form action="{{ route('admin.post.delete', $post->id)  }}" method="POST" class="d-inline-block">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
-                </form>
-            </div><!-- /.col -->
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Dashboard v1</li>
-                </ol>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-</div>
-<!-- /.content-header -->
+@include('admin.parts.content-header', ['page_title' => $post->title])
 
 <!-- Main content -->
 <section class="content">
@@ -34,7 +12,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body table-responsive p-0">
-                        <table class="table table-hover text-nowrap">
+                        <table class="table table-striped table-valign-middle">
                             <tbody>
                             <tr>
                                 <th>ID</th>

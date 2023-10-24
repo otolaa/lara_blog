@@ -9,7 +9,12 @@ class DeleteController extends Controller
 {
     public function __invoke(Tag $tag)
     {
-        $tag->delete();
+        try {
+            $tag->delete();
+        } catch (\Exception $exception) {
+            \Session::flash('success', $exception->getMessage());
+        }
+
         return redirect()->route('admin.tag.index');
     }
 }
