@@ -3,13 +3,15 @@
 namespace App\Http\Controllers\Admin\Main;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use App\Models\Post;
 
 class IndexController extends Controller
 {
     public function __invoke()
     {
-        return view('admin.main.index', ['user'=>Auth::user()]);
+        $user_count = User::all()->count();
+        $post_count = Post::all()->count();
+        return view('admin.main.index', compact('user_count', 'post_count'));
     }
 }
