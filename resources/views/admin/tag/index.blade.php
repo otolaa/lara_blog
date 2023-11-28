@@ -47,6 +47,7 @@
                 </table>
                 </div>
             </div>
+            {{ $tags->links()  }}
         </div>
         <!-- ./col -->
     </div>

@@ -43,6 +43,7 @@
                 </table>
                 </div>
             </div>
+            {{ $categories->links()  }}
         </div>
         <!-- ./col -->
     </div>
