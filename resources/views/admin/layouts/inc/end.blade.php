@@ -40,7 +40,7 @@
 <script src="/vendor/adminlte/dist/js/demo.js"></script> {{--TODO: customize this--}}
 <script src="/vendor/lte3/main.js"></script>
 @stack('scripts')
-@include('admin_example.layouts.inc.options')
+@include('admin.layouts.inc.options')
 
 </body>
 </html>
