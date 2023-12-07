@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Auth;
 
 Route::controller(IndexController::class)->group(function () {
     Route::get('/', IndexController::class)->name('main.index');
+    Route::get('/posts/{post}', 'App\Http\Controllers\Main\IndexController@show')->name('show.index');
     Route::get('/lte3', 'App\Http\Controllers\Main\IndexController@lte3')->name('lte3.index');
 });
 

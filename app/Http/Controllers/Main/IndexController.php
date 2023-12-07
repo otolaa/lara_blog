@@ -19,4 +19,10 @@ class IndexController extends Controller
     {
         abort(404);
     }
+
+    public function show(Post $post)
+    {
+        //return $post;
+        return view('main.show', compact('post'));
+    }
 }
