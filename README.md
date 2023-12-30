@@ -1,3 +1,9 @@
+# 0 - blog is developed in laravel
+
+![adminPanel](https://github.com/otolaa/lara_blog/blob/main/public/scrin.png "adminPanel")
+
+![adminPanelPost](https://github.com/otolaa/lara_blog/blob/main/public/scrin_p.png "adminPanelPost")
+
 ### 1 - Laravel Blog
 Category, Tag, Post
 ```
