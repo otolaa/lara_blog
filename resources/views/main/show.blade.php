@@ -26,17 +26,19 @@
                 @endif
 
                 <div class="card-body">
-                    <h5 class="card-title">{{ $post->category->title  }}</h5>
+                    <h6 class="card-title">{{ $post->category->title  }}</h6>
                 </div>
-                {{--{% if post.tags %}--}}
-                {{--<ul class="list-group list-group-flush">--}}
-                    {{--<li class="list-group-item">--}}
-                        {{--{% for tag in post.tags.all  %}--}}
-                        {{--<a href="{{ tag.get_absolute_url }}" class="card-link">{{ tag.title }}</a>--}}
-                        {{--{% endfor  %}--}}
-                    {{--</li>--}}
-                {{--</ul>--}}
-                {{--{% endif %}--}}
+
+                @if($post->tags->count())
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        @foreach($post->tags as $tag)
+                            <span class="card-link">{{ $tag->title }}</span>
+                        @endforeach
+                    </li>
+                </ul>
+                @endif
+
                 <div class="card-body">
                     <a href="/" class="btn btn-secondary btn-sm">&larr; назад</a>
                 </div>

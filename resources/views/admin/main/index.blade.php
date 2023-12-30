@@ -62,6 +62,47 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-4 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-secondary">
+                        <div class="inner">
+                            <h3>{{ $tag_count }}</h3>
+                            <p>Tags</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-tags"></i>
+                        </div>
+                        <a href="/admin/tags" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-dark">
+                        <div class="inner">
+                            <h3>{{ $category_count }}</h3>
+                            <p>Categories</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-atom"></i>
+                        </div>
+                        <a href="/admin/categories" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <!-- small box -->
+                    <div class="small-box bg-dark">
+                        <div class="inner">
+                            <h3>icons</h3>
+                            <p>Font Awesome search</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-icons"></i>
+                        </div>
+                        <a href="//fontawesome.com/search?q=icon&o=r" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
